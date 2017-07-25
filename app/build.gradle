@@ -6,7 +6,7 @@ android {
     defaultConfig {
         applicationId "com.example.walden.jbox2dtest"
         minSdkVersion 19
-        targetSdkVersion 26
+        targetSdkVersion 23
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -27,5 +27,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:26.+'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
-    compile files('libs/jbox2d-library-2.1.2.jar')
+    compile project(path: ':MobikeLibrary')
 }
